@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4vw;
+}
+
+h1 {
+  height: 200px;
+  width: 600px;
+  background-color: rgb(231, 185, 100);
+  position: relative;
+  opacity: 0;
+  p {
+    text-align: center;
+    color: aliceblue;
+    font-family: monospace;
+  }
+}
+
+button {
+  padding: 0.8vw 1.2vw;
+  border-radius: 20px;
+  border: 1px solid white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.active {
+  scale: 0.8;
+  transition: all .4s ease-in-out;
+  /* display: block; */
+  opacity: 1;
+
+}
